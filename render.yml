@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: springboot-app
+    runtime: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/*.jar
