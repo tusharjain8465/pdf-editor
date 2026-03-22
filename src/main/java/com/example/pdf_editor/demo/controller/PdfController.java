@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/pdf")
-@CrossOrigin("*")
+@CrossOrigin(origins = "https://pdf-editor-frontend-vercel.vercel.app")
 public class PdfController {
 
     @PostMapping(value = "/finalize", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
