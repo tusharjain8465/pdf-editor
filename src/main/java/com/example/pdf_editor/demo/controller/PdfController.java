@@ -18,6 +18,11 @@ import java.util.Map;
 @CrossOrigin(origins = "https://pdf-editor-frontend-vercel.vercel.app")
 public class PdfController {
 
+     @GetMapping("/ping")
+    public String ping() {
+        return "Service running";
+    }
+
     @PostMapping(value = "/finalize", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<byte[]> finalizePdf(
             @RequestParam("file") MultipartFile file,
