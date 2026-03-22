@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://pdf-editor-frontend-vercel.vercel.app")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
